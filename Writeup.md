@@ -1,7 +1,7 @@
 # American Dream — Interactive Sales Deck
 ### A luxury, browser-based pitch tool for North America's most ambitious mixed-use destination
 
-**Live Demo:** [your-deployment-url.vercel.app](https://your-deployment-url.vercel.app)  
+**Live Demo:** [american-dream-deck-one.vercel.app](https://american-dream-deck-one.vercel.app/)  
 **Built for:** LIAT.AI Senior Frontend Engineer & AI-Powered Interactive Design Assignment
 
 ---
