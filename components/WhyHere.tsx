@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import SectionHeader from './ui/SectionHeader';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import SectionHeader from "./ui/SectionHeader";
 
 export default function WhyHere() {
   return (
@@ -16,15 +17,16 @@ export default function WhyHere() {
             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
             className="aspect-[4/5] overflow-hidden bg-surface relative"
           >
-            <img 
-              src="/assets/images/american_dream_exterior_night.png" 
-              alt="American Dream Exterior" 
-              className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+            <Image
+              src="/assets/images/american_dream_exterior_night.png"
+              alt="American Dream Exterior"
+              fill
+              className="object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
             />
             {/* Overlay border */}
             <div className="absolute inset-4 border border-accent/20 pointer-events-none" />
           </motion.div>
-          
+
           {/* Floating badge */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -35,16 +37,23 @@ export default function WhyHere() {
           >
             <div className="text-background">
               <span className="block text-5xl font-display mb-1">94%</span>
-              <span className="block text-[8px] uppercase tracking-[0.3em] font-bold opacity-80">Brand Recall</span>
+              <span className="block text-[8px] uppercase tracking-[0.3em] font-bold opacity-80">
+                Brand Recall
+              </span>
             </div>
           </motion.div>
         </div>
 
         {/* TEXT SIDE */}
         <div className="lg:w-1/2">
-          <SectionHeader 
-            eyebrow="The Strategic Choice" 
-            headline={<>A Gravity Well <br /><span className="italic">for Global Commerce.</span></>} 
+          <SectionHeader
+            eyebrow="The Strategic Choice"
+            headline={
+              <>
+                A Gravity Well <br />
+                <span className="italic">for Global Commerce.</span>
+              </>
+            }
             className="mb-12"
           />
 
@@ -56,17 +65,29 @@ export default function WhyHere() {
             className="space-y-8"
           >
             <p className="text-secondary text-lg leading-relaxed">
-              Located just 4 miles from Manhattan, American Dream is more than a destination—it&apos;s a global platform where the world&apos;s most innovative brands activate at a scale impossible anywhere else.
+              Located just 4 miles from Manhattan, American Dream is more than a
+              destination—it&apos;s a global platform where the world&apos;s
+              most innovative brands activate at a scale impossible anywhere
+              else.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8">
               <div className="space-y-4">
-                <span className="text-accent font-display text-4xl block">127K</span>
-                <span className="text-secondary text-xs uppercase tracking-widest leading-relaxed">Average household income within the primary trade area.</span>
+                <span className="text-accent font-display text-4xl block">
+                  127K
+                </span>
+                <span className="text-secondary text-xs uppercase tracking-widest leading-relaxed">
+                  Average household income within the primary trade area.
+                </span>
               </div>
               <div className="space-y-4">
-                <span className="text-accent font-display text-4xl block">4.5 Hrs</span>
-                <span className="text-secondary text-xs uppercase tracking-widest leading-relaxed">Average dwell time, significantly higher than industry standard.</span>
+                <span className="text-accent font-display text-4xl block">
+                  4.5 Hrs
+                </span>
+                <span className="text-secondary text-xs uppercase tracking-widest leading-relaxed">
+                  Average dwell time, significantly higher than industry
+                  standard.
+                </span>
               </div>
             </div>
           </motion.div>
