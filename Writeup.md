@@ -95,7 +95,7 @@ The write-up you are reading was written by the developer, not generated — des
 
 ```bash
 # Clone the repository
-git clone https://github.com/Biswajit2595/american-dream-deck.git
+git clone https://github.com/Biswajit2595/american-dream-deck
 cd american-dream-deck
 
 # Install dependencies
